@@ -1,6 +1,8 @@
 from question_model import Question
-from data import question_data
+from data import fetch_questions
 from quiz_brain import QuizBrain
+
+question_data = fetch_questions()
 
 question_bank = []
 for question in question_data:
